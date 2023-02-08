@@ -1,2 +1,36 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+// -- -
+// **Задача 2:**Напишите программу, которая принимает на вход число и
+//  выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+// Важно: не использовать строки, использовать только арифметические действия
+
+
+
+Console.Clear();
+Console.Write ("Введите число A: ");
+int num = int.Parse (Console.ReadLine ());
+
+Console.WriteLine($"сумма числе в числе {num} = {GetMultiply(num)}");
+
+int GetMultiply(int n) { 
+    int result = 0;
+    int i = 1;
+    while (i <= n) {
+      int n1 = n%10;
+      n = n/10;
+      result = result+n1;
+    } return result;
+    }
+
+
+
+
+
+
+// ---
+// **Задача 3:**Напишите программу, которая задаёт массив из 8 элементов 
+// и выводит их на экран.
+// 1, 2, 5, 7, 19,6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
